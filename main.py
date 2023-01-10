@@ -9,5 +9,7 @@ bot = Bot(TOKEN)
 
 
 # Send a message to the bot
-msg = bot.sendMessage(5575549228,"Hello World!!!")
+msg = bot.sendMessage(5075065217,"Hello World!!!")
 print(msg.text)
+get = bot.getUpdates(643899207)
+print(get)

@@ -51,7 +51,14 @@ class Bot:
         returns:
             An array of update objects
         """
-        pass
+        url = f'{self.base_url}getUpdates'
+        payload = {
+            "offset": offset 
+        }
+        response = requests.get(url=url, params=payload)
+        response = response.json()
+        return response
+        
 
     def sendPhoto(self,chat_id:int,photo:str):
         """
